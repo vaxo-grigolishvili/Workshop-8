@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+}
+@keyframes road {
+    0%{
+        transform: translate(0 , 0);
+    }
+    25%{
+        transform: translate( 700px, 110px);
+    }
+    50%{
+        transform: translate(700px, 110px);
+    }
+    100%{
+        transform: translate(2000px, 0);
+    }
+}
+
+.road{
+    width: 100%;
+    display: flex;
+    margin-top: 200px;
+}   
+.road_dec{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.car {
+     animation: road normal 10s 0.1s 5 ease forwards;
+    width: 150px;
+    height: 110px;
+    margin-top: 40px;
+}
+.car_dec1{
+    width: 150px;
+    height: 110px; 
+    margin-top: 200px;
+    margin-left: 500px;
+    position: absolute;
+}
+.car_dec2{
+    width: 150px;
+    height: 110px;
+    margin-top: 40px; 
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 1100px;
+}
